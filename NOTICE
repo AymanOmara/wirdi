@@ -1,0 +1,19 @@
+ggml-tarteel-base-ar-quran-q5_1.bin
+
+This file is tarteel-ai/whisper-base-ar-quran converted to the GGML format of
+whisper.cpp and quantized to q5_1. The weights are otherwise unchanged.
+
+  Model:    tarteel-ai/whisper-base-ar-quran
+            https://huggingface.co/tarteel-ai/whisper-base-ar-quran
+            Copyright Tarteel AI. Licensed under the Apache License, Version 2.0
+            https://www.apache.org/licenses/LICENSE-2.0
+  Based on: openai/whisper-base, Copyright (c) 2022 OpenAI, MIT License
+            https://github.com/openai/whisper/blob/main/LICENSE
+  Tools:    whisper.cpp 1.9.4 (convert-h5-to-ggml.py, whisper-quantize),
+            Copyright (c) 2023-2026 The ggml authors, MIT License
+
+Modification: the checkpoint's config.json `max_length` (1024) was set to
+`max_target_positions` (448) before conversion, as whisper.cpp requires.
+
+SHA-256: acc1f03c8b1468b674b4fab50e0b2312cff982ba0001cd16fe36ca23862b6536
+Size:    59,707,625 bytes
